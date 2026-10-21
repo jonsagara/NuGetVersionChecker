@@ -4,12 +4,12 @@ using Spectre.Console;
 
 NuGetAssemblyQuery[] queries =
 [
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core/6.0.0-preview.21", AssemblyName: "Sagara.Core"),
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.AspNetCore/6.0.0-preview.21", AssemblyName: "Sagara.Core.AspNetCore"),
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Caching/6.0.0-preview.21", AssemblyName: "Sagara.Core.Caching"),
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Data/6.0.0-preview.21", AssemblyName: "Sagara.Core.Data"),
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Google/6.0.0-preview.21", AssemblyName: "Sagara.Core.Google"),
-    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Logging.Serilog/6.0.0-preview.21", AssemblyName: "Sagara.Core.Logging.Serilog"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core/5.10.4", AssemblyName: "Sagara.Core"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.AspNetCore/5.10.4", AssemblyName: "Sagara.Core.AspNetCore"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Caching/5.10.4", AssemblyName: "Sagara.Core.Caching"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Data/5.10.4", AssemblyName: "Sagara.Core.Data"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Google/5.10.4", AssemblyName: "Sagara.Core.Google"),
+    new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.Core.Logging.Serilog/5.10.4", AssemblyName: "Sagara.Core.Logging.Serilog"),
     // Doesn't support dotnet tools
     //new(NuGetPackageUrl: "https://www.nuget.org/packages/Sagara.NuGetDiff.Tool/1.0.3", AssemblyName: "Sagara.NuGetDiff.Tool"),
 ];
