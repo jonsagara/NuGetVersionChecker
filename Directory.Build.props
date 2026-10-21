@@ -1,0 +1,18 @@
+<Project>
+	<PropertyGroup>
+
+		<TargetFramework>net11.0</TargetFramework>
+		
+		<!-- C# stuff -->
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!-- LangVersion intentionally omitted: SDK infers the recommended C# version per TFM -->
+		<!-- 
+			This is really helpful for larger projects, but I leave it in anyway. Why build if you don't have to? 
+			
+			See: https://devblogs.microsoft.com/visualstudio/vs-toolbox-accelerate-your-builds-of-sdk-style-net-projects/
+		-->
+		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+
+	</PropertyGroup>
+</Project>
