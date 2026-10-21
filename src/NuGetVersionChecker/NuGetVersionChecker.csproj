@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Sagara.Core" />
     <PackageReference Include="Spectre.Console" />
   </ItemGroup>
 

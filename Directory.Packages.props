@@ -3,6 +3,7 @@
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageVersion Include="Sagara.Core" Version="5.10.4" />
 		<PackageVersion Include="Spectre.Console" Version="0.57.2" />
 	</ItemGroup>
 </Project>

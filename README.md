@@ -49,11 +49,11 @@ dotnet run --project src/NuGetVersionChecker
 ╭──────────────────┬─────────────────────┬─────────┬─────────────────┬──────────────┬───────────────────────────────────────────────────╮
 │ Target Framework │ DLL                 │ Version │ AssemblyVersion │ FileVersion  │ InformationalVersion                              │
 ├──────────────────┼─────────────────────┼─────────┼─────────────────┼──────────────┼───────────────────────────────────────────────────┤
+│ net6.0           │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ net20            │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ net35            │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ net40            │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ net45            │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
-│ net6.0           │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ netstandard1.0   │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ netstandard1.3   │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
 │ netstandard2.0   │ Newtonsoft.Json.dll │ 13.0.3  │ 13.0.0.0        │ 13.0.3.27908 │ 13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef   │
@@ -67,7 +67,7 @@ If the assembly isn't found under `lib/`, the table shows a note in its caption.
 - Only nuget.org gallery URLs are supported.
 - Only `lib/` is searched. `ref/` (reference assemblies) and `runtimes/{rid}/lib/` (platform-specific builds) are ignored.
 - .NET tool packages are not supported, because they put their assemblies under `tools/` rather than `lib/`.
-- Target frameworks are sorted alphabetically, so `net10.0` appears before `net6.0`.
+- Target frameworks are sorted by comparing the numbers in their names, so `net6.0` comes before `net10.0`. Because of this, .NET Framework folders sort by their number as a whole: `net462` (462) comes after `net48` (48), and every `net4x` folder comes after the modern .NET folders.
 
 ## License
 

@@ -2,6 +2,7 @@ using System.IO.Compression;
 using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
 using NuGetVersionChecker.Models;
+using Sagara.Core.Extensions;
 
 namespace NuGetVersionChecker.Services;
 
@@ -47,7 +48,7 @@ public static class AssemblyVersionReader
         }
 
         return results
-            .OrderBy(r => r.TargetFramework, StringComparer.OrdinalIgnoreCase)
+            .OrderBy(r => r.TargetFramework, StringComparer.InvariantCultureNumericIgnoreCase)
             .ToList();
     }
 
